@@ -27,12 +27,14 @@ python day-01-python-basics/basics.py
 The script prints the variables and their data types, shows operator results, then prompts
 for your name, age, and two numbers to calculate.
 
-### Progress
+## Progress — Week 1 Plan
 
-- [x] Day 01 — Python Basics
-- [ ] Day 02 — Strings & Conditions
-- [ ] Day 03 — Loops
-- [ ] Day 04 — Lists, Tuples & Dictionaries
-- [ ] Day 05 — Functions
-- [ ] Day 06 — File Handling
-- [ ] Day 07 — Week 1 Recap / Mini Project
+| Day | Topics | Folder | Status |
+|-----|--------|--------|--------|
+| Day 1 | Python syntax, variables, data types, operators, input/output | `day-01-python-basics` | ✅ Complete |
+| Day 2 | Conditions, loops, `range()`, functions | `day-02-control-flow-functions` | ⬜ Pending |
+| Day 3 | Lists, tuples, dictionaries, sets | `day-03-data-structures` | ⬜ Pending |
+| Day 4 | File handling, exceptions, modules, basic OOP | `day-04-files-oop` | ⬜ Pending |
+| Day 5 | NumPy: arrays, indexing, mathematical operations | `day-05-numpy` | ⬜ Pending |
+| Day 6 | Pandas: Series, DataFrames, filtering, sorting, missing values | `day-06-pandas` | ⬜ Pending |
+| Day 7 | Matplotlib, Seaborn, TensorFlow intro, CSV analysis task | `day-07-visualization-tensorflow` | ⬜ Pending |

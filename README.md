@@ -190,7 +190,7 @@ python day-06-pandas/Task_4/dataset_cleaning.py
 > Requires `pandas` and `matplotlib` (`pip install pandas matplotlib`). Task 4 uses
 > script-relative paths, so it can be run from any directory.
 
-## Day 07 — Matplotlib, Seaborn & CSV Analysis (`day-07-visualization-tensorflow/`)
+## Day 07 — Matplotlib, Seaborn, Keras & CSV Analysis (`day-07-visualization-tensorflow/`)
 
 ### What's covered
 
@@ -198,15 +198,27 @@ python day-06-pandas/Task_4/dataset_cleaning.py
 |---|-------|--------|
 | 1 | Matplotlib — bar chart with `title`, `xlabel`, `ylabel`, `show` | ✅ Complete |
 | 2 | Seaborn — `sns.barplot` on the same data | ✅ Complete |
-| 3 | Task 5 — load a messy CSV, inspect with `head`/`shape`/`info`/`describe` | ✅ Complete |
-| 4 | Cleaning — strip column whitespace, title-case categories, coerce `$`-prefixed numerics | ✅ Complete |
-| 5 | Data quality — missing values, duplicates, invalid quantities/prices | ✅ Complete |
-| 6 | Derived totals — `Quantity * Price` for valid rows only | ✅ Complete |
-| 7 | Charts — orders by status, average price by category, missing values, correlation heatmap | ✅ Complete |
+| 3 | TensorFlow overview — what TF & Keras are for, `import tensorflow as tf` | ✅ Complete |
+| 4 | `tf.keras` in `ploting.py` — `Sequential` + `Dense` regression demo (`y = 2x`: `compile`, `fit`, `predict`) | ✅ Complete |
+| 5 | Keras (TensorFlow) — building a model with `keras.Input` + `layers.Dense` in a `Sequential` | ✅ Complete |
+| 6 | Keras — `compile` (adam, `binary_crossentropy`) and `fit` with `validation_split` | ✅ Complete |
+| 7 | Keras — `evaluate` and `predict` on held-out test data | ✅ Complete |
+| 8 | Keras — training-history chart (loss & accuracy) and `model.save()` (`.keras`) | ✅ Complete |
+| 9 | Task 5 — load a messy CSV, inspect with `head`/`shape`/`info`/`describe` | ✅ Complete |
+| 10 | Cleaning — strip column whitespace, title-case categories, coerce `$`-prefixed numerics | ✅ Complete |
+| 11 | Data quality — missing values, duplicates, invalid quantities/prices | ✅ Complete |
+| 12 | Derived totals — `Quantity * Price` for valid rows only | ✅ Complete |
+| 13 | Charts — orders by status, average price by category, missing values, correlation heatmap | ✅ Complete |
 
 ### Files
 
-- `day-07-visualization-tensorflow/ploting.py` — Matplotlib and Seaborn bar-chart examples.
+- `day-07-visualization-tensorflow/ploting.py` — Matplotlib and Seaborn bar-chart examples,
+  plus a TensorFlow overview with a small `tf.keras` regression demo (learns `y = 2x`).
+- `day-07-visualization-tensorflow/keras_intro.py` — Keras intro: builds a `Sequential`
+  classifier on synthetic student-pass data, trains with a validation split, evaluates and
+  predicts on held-out data, plots the loss/accuracy history, and saves the model.
+- `day-07-visualization-tensorflow/keras_training_history.png` — generated loss/accuracy chart.
+- `day-07-visualization-tensorflow/keras_student_model.keras` — saved trained model.
 - `day-07-visualization-tensorflow/Task_5/csv_visualization.py` — full CSV analysis pipeline.
 - `day-07-visualization-tensorflow/Task_5/messy_ecommerce_sales_data.csv` — raw input dataset.
 - `day-07-visualization-tensorflow/Task_5/ecommerce_analyzed.csv` — analysis-ready output.
@@ -217,13 +229,16 @@ python day-06-pandas/Task_4/dataset_cleaning.py
 
 ```bash
 python day-07-visualization-tensorflow/ploting.py
+python day-07-visualization-tensorflow/keras_intro.py   # prints model summary, trains, saves .keras model
 
 cd day-07-visualization-tensorflow/Task_5
 python csv_visualization.py   # opens each chart in a window; also saved as PNG
 ```
 
-> Requires `pandas`, `matplotlib`, and `seaborn`. `Task_5` reads its CSV with a relative
-> path, so run it from inside the `Task_5` folder.
+> Requires `pandas`, `matplotlib`, `seaborn`, and `tensorflow` (Keras is included with it;
+> `pip install tensorflow`). `keras_intro.py` uses script-relative paths, so it runs from any
+> directory. `Task_5` reads its CSV with a relative path, so run it from inside the `Task_5`
+> folder.
 
 ## Progress — Week 1 Plan
 
@@ -235,6 +250,6 @@ python csv_visualization.py   # opens each chart in a window; also saved as PNG
 | Day 4 | File handling, exceptions, modules, basic OOP | `day-04-files-oop` | ✅ Complete |
 | Day 5 | NumPy: arrays, indexing, mathematical operations | `day-05-numpy` | ✅ Complete |
 | Day 6 | Pandas: Series, DataFrames, filtering, sorting, missing values | `day-06-pandas` | ✅ Complete |
-| Day 7 | Matplotlib, Seaborn, TensorFlow intro, CSV analysis task | `day-07-visualization-tensorflow` | ✅ Complete |
+| Day 7 | Matplotlib, Seaborn, Keras/TensorFlow intro, CSV analysis task | `day-07-visualization-tensorflow` | ✅ Complete |
 
 All 7 days of Week 1 are complete. 🎉
